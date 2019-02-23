@@ -33,6 +33,10 @@ class ExamplePresenter {
     }
     
     private func getHeroes() {
-        self.getHeroesInteractor.getHeroes()
+        let message = self.getHeroesInteractor.getHeroes().reduce("") { (result, hero) in
+            return result + (result.isEmpty ? "" : ", ") + hero
+        }
+        
+        view?.setHeroLabel(text: message)
     }
 }

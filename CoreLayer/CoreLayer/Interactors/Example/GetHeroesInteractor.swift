@@ -16,7 +16,7 @@ public class GetHeroesInteractor {
         self.heroesRepository = heroesRepository
     }
     
-    func getHeroes() -> [String] {
+    public func getHeroes() -> [String] {
         return self.heroesRepository.getHeroes()
     }
 }
