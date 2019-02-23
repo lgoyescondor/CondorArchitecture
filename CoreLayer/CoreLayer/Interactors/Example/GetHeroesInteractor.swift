@@ -12,8 +12,11 @@ public class GetHeroesInteractor {
     
     let heroesRepository: HeroesRepositoryProtocol
     
-    init(heroesRepository: HeroesRepositoryProtocol){
+    public init(heroesRepository: HeroesRepositoryProtocol){
         self.heroesRepository = heroesRepository
     }
     
+    func getHeroes() -> [String] {
+        return self.heroesRepository.getHeroes()
+    }
 }

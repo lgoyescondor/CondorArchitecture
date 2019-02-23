@@ -9,8 +9,10 @@
 import Foundation
 import CoreLayer
 
-class HeroesRepository : HeroesRepositoryProtocol {
-    func getHeroes() -> [String] {
+public class HeroesRepository : HeroesRepositoryProtocol {
+    public init() { }
+    
+    public func getHeroes() -> [String] {
         return ["Superman", "Daredevil"]
     }
 }

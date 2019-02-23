@@ -8,10 +8,31 @@
 
 import Foundation
 import CoreLayer
+import DataLayer
 
 class ExamplePresenter {
 
+    let heroesRepository : HeroesRepositoryProtocol
+    let getHeroesInteractor : GetHeroesInteractor
+    
+    private weak var view: ExampleViewController?
+    
     init(){
+        heroesRepository = HeroesRepository()
+        getHeroesInteractor = GetHeroesInteractor(heroesRepository: heroesRepository)
+    }
+    
+    func bind(view: ExampleViewController){
+        self.view = view
         
+        self.getHeroes()
+    }
+    
+    func unBind(){
+        self.view = nil
+    }
+    
+    private func getHeroes() {
+        self.getHeroesInteractor.getHeroes()
     }
 }

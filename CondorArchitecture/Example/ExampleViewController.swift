@@ -12,13 +12,21 @@ class ExampleViewController: UIViewController {
 
     private var presenter: ExamplePresenter?
     
+    @IBOutlet weak var heroLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.presenter = ExamplePresenter()
-
+        self.presenter?.bind(view: self)
     }
-
-
+    
+    deinit {
+        self.presenter?.unBind()
+    }
+    
+    func setHeroLabel(text: String){
+        self.heroLabel?.text = text
+    }
 }
 
