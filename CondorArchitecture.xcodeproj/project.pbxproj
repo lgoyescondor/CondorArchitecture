@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B1F3D7BF2221B1E500E564A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3D7BE2221B1E500E564A1 /* AppDelegate.swift */; };
-		B1F3D7C12221B1E500E564A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3D7C02221B1E500E564A1 /* ViewController.swift */; };
+		B1F3D7C12221B1E500E564A1 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3D7C02221B1E500E564A1 /* ExampleViewController.swift */; };
 		B1F3D7C42221B1E500E564A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1F3D7C22221B1E500E564A1 /* Main.storyboard */; };
 		B1F3D7C62221B1E600E564A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1F3D7C52221B1E600E564A1 /* Assets.xcassets */; };
 		B1F3D7C92221B1E600E564A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1F3D7C72221B1E600E564A1 /* LaunchScreen.storyboard */; };
 		B1F3D7D42221B1E700E564A1 /* CondorArchitectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3D7D32221B1E700E564A1 /* CondorArchitectureTests.swift */; };
+		B1F3D8552221B8FC00E564A1 /* DataLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F3D8542221B8FC00E564A1 /* DataLayer.framework */; };
+		B1F3D8572221B90000E564A1 /* CoreLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F3D8562221B90000E564A1 /* CoreLayer.framework */; };
+		B1F3D85D2221B9C900E564A1 /* ExamplePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3D85C2221B9C900E564A1 /* ExamplePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +31,7 @@
 /* Begin PBXFileReference section */
 		B1F3D7BB2221B1E500E564A1 /* CondorArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CondorArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F3D7BE2221B1E500E564A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B1F3D7C02221B1E500E564A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B1F3D7C02221B1E500E564A1 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		B1F3D7C32221B1E500E564A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B1F3D7C52221B1E600E564A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1F3D7C82221B1E600E564A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +39,9 @@
 		B1F3D7CF2221B1E700E564A1 /* CondorArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CondorArchitectureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F3D7D32221B1E700E564A1 /* CondorArchitectureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CondorArchitectureTests.swift; sourceTree = "<group>"; };
 		B1F3D7D52221B1E700E564A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1F3D8542221B8FC00E564A1 /* DataLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1F3D8562221B90000E564A1 /* CoreLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1F3D85C2221B9C900E564A1 /* ExamplePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1F3D8572221B90000E564A1 /* CoreLayer.framework in Frameworks */,
+				B1F3D8552221B8FC00E564A1 /* DataLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +70,7 @@
 				B1F3D7BD2221B1E500E564A1 /* CondorArchitecture */,
 				B1F3D7D22221B1E700E564A1 /* CondorArchitectureTests */,
 				B1F3D7BC2221B1E500E564A1 /* Products */,
+				B1F3D8532221B8FC00E564A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,8 +86,8 @@
 		B1F3D7BD2221B1E500E564A1 /* CondorArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				B1F3D85B2221B9AE00E564A1 /* Example */,
 				B1F3D7BE2221B1E500E564A1 /* AppDelegate.swift */,
-				B1F3D7C02221B1E500E564A1 /* ViewController.swift */,
 				B1F3D7C22221B1E500E564A1 /* Main.storyboard */,
 				B1F3D7C52221B1E600E564A1 /* Assets.xcassets */,
 				B1F3D7C72221B1E600E564A1 /* LaunchScreen.storyboard */,
@@ -94,6 +103,24 @@
 				B1F3D7D52221B1E700E564A1 /* Info.plist */,
 			);
 			path = CondorArchitectureTests;
+			sourceTree = "<group>";
+		};
+		B1F3D8532221B8FC00E564A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1F3D8562221B90000E564A1 /* CoreLayer.framework */,
+				B1F3D8542221B8FC00E564A1 /* DataLayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1F3D85B2221B9AE00E564A1 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				B1F3D7C02221B1E500E564A1 /* ExampleViewController.swift */,
+				B1F3D85C2221B9C900E564A1 /* ExamplePresenter.swift */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +224,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1F3D7C12221B1E500E564A1 /* ViewController.swift in Sources */,
+				B1F3D7C12221B1E500E564A1 /* ExampleViewController.swift in Sources */,
+				B1F3D85D2221B9C900E564A1 /* ExamplePresenter.swift in Sources */,
 				B1F3D7BF2221B1E500E564A1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

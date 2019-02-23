@@ -10,6 +10,8 @@
 		B1F3D8432221B6F900E564A1 /* DataLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F3D8392221B6F900E564A1 /* DataLayer.framework */; };
 		B1F3D8482221B6F900E564A1 /* DataLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3D8472221B6F900E564A1 /* DataLayerTests.swift */; };
 		B1F3D84A2221B6F900E564A1 /* DataLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = B1F3D83C2221B6F900E564A1 /* DataLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1F3D85A2221B90B00E564A1 /* CoreLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F3D8592221B90B00E564A1 /* CoreLayer.framework */; };
+		B1F3D8682221BB2C00E564A1 /* HeroesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3D8672221BB2C00E564A1 /* HeroesRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		B1F3D8422221B6F900E564A1 /* DataLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F3D8472221B6F900E564A1 /* DataLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLayerTests.swift; sourceTree = "<group>"; };
 		B1F3D8492221B6F900E564A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1F3D8592221B90B00E564A1 /* CoreLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1F3D8672221BB2C00E564A1 /* HeroesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1F3D85A2221B90B00E564A1 /* CoreLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +60,7 @@
 			children = (
 				B1F3D83B2221B6F900E564A1 /* DataLayer */,
 				B1F3D8462221B6F900E564A1 /* DataLayerTests */,
+				B1F3D8582221B90B00E564A1 /* Frameworks */,
 				B1F3D83A2221B6F900E564A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +77,7 @@
 		B1F3D83B2221B6F900E564A1 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				B1F3D8662221BB1B00E564A1 /* Repositories */,
 				B1F3D83C2221B6F900E564A1 /* DataLayer.h */,
 				B1F3D83D2221B6F900E564A1 /* Info.plist */,
 			);
@@ -84,6 +91,22 @@
 				B1F3D8492221B6F900E564A1 /* Info.plist */,
 			);
 			path = DataLayerTests;
+			sourceTree = "<group>";
+		};
+		B1F3D8582221B90B00E564A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1F3D8592221B90B00E564A1 /* CoreLayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1F3D8662221BB1B00E564A1 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				B1F3D8672221BB2C00E564A1 /* HeroesRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +171,7 @@
 				TargetAttributes = {
 					B1F3D8382221B6F900E564A1 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					B1F3D8412221B6F900E564A1 = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1F3D8682221BB2C00E564A1 /* HeroesRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +366,7 @@
 		B1F3D84E2221B6F900E564A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +384,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.condorlabs.DataLayer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +393,7 @@
 		B1F3D84F2221B6F900E564A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +419,7 @@
 		B1F3D8512221B6F900E564A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2FXVLDPZKV;
 				INFOPLIST_FILE = DataLayerTests/Info.plist;
@@ -409,6 +438,7 @@
 		B1F3D8522221B6F900E564A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2FXVLDPZKV;
 				INFOPLIST_FILE = DataLayerTests/Info.plist;

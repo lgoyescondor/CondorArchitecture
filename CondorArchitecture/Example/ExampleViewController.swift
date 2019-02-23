@@ -8,11 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ExampleViewController: UIViewController {
 
+    private var presenter: ExamplePresenter?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.presenter = ExamplePresenter()
+
     }
 
 
