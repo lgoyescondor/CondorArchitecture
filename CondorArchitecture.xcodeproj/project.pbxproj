@@ -11,6 +11,8 @@
 		9BB3413D222427F200D2F98B /* ViewControllerComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3413C222427F200D2F98B /* ViewControllerComponent.swift */; };
 		9BB3413F222428C500D2F98B /* InteractorModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3413E222428C500D2F98B /* InteractorModule.swift */; };
 		9BB3414422242B8F00D2F98B /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3414322242B8F00D2F98B /* Module.swift */; };
+		9BB3414622242C7B00D2F98B /* InteractorModule+Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3414522242C7B00D2F98B /* InteractorModule+Example.swift */; };
+		9BB3414822242CF400D2F98B /* ExampleModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3414722242CF400D2F98B /* ExampleModule.swift */; };
 		B151B9BB222389460060F7E9 /* ExampleContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151B9BA222389460060F7E9 /* ExampleContract.swift */; };
 		B151B9BE22238C7F0060F7E9 /* BaseContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151B9BD22238C7F0060F7E9 /* BaseContract.swift */; };
 		B1F3D7BF2221B1E500E564A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3D7BE2221B1E500E564A1 /* AppDelegate.swift */; };
@@ -39,6 +41,8 @@
 		9BB3413C222427F200D2F98B /* ViewControllerComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerComponent.swift; sourceTree = "<group>"; };
 		9BB3413E222428C500D2F98B /* InteractorModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorModule.swift; sourceTree = "<group>"; };
 		9BB3414322242B8F00D2F98B /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		9BB3414522242C7B00D2F98B /* InteractorModule+Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InteractorModule+Example.swift"; sourceTree = "<group>"; };
+		9BB3414722242CF400D2F98B /* ExampleModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleModule.swift; sourceTree = "<group>"; };
 		B151B9BA222389460060F7E9 /* ExampleContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleContract.swift; sourceTree = "<group>"; };
 		B151B9BD22238C7F0060F7E9 /* BaseContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseContract.swift; sourceTree = "<group>"; };
 		B1F3D7BB2221B1E500E564A1 /* CondorArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CondorArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				9BB3413E222428C500D2F98B /* InteractorModule.swift */,
+				9BB3414522242C7B00D2F98B /* InteractorModule+Example.swift */,
 			);
 			path = InteractorModules;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 				B1F3D7C02221B1E500E564A1 /* ExampleViewController.swift */,
 				B1F3D85C2221B9C900E564A1 /* ExamplePresenter.swift */,
 				B151B9BA222389460060F7E9 /* ExampleContract.swift */,
+				9BB3414722242CF400D2F98B /* ExampleModule.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -267,10 +273,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1F3D7C12221B1E500E564A1 /* ExampleViewController.swift in Sources */,
+				9BB3414822242CF400D2F98B /* ExampleModule.swift in Sources */,
 				B151B9BE22238C7F0060F7E9 /* BaseContract.swift in Sources */,
 				9BB3414422242B8F00D2F98B /* Module.swift in Sources */,
 				9BB3413F222428C500D2F98B /* InteractorModule.swift in Sources */,
 				9BB3413B222427C900D2F98B /* PresenterModule.swift in Sources */,
+				9BB3414622242C7B00D2F98B /* InteractorModule+Example.swift in Sources */,
 				B1F3D85D2221B9C900E564A1 /* ExamplePresenter.swift in Sources */,
 				9BB3413D222427F200D2F98B /* ViewControllerComponent.swift in Sources */,
 				B151B9BB222389460060F7E9 /* ExampleContract.swift in Sources */,

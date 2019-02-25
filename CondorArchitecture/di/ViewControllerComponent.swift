@@ -9,9 +9,9 @@
 import Foundation
 import DataLayer
 
-class ViewControllerComponent {
-    private let repositoryModule: RepositoryModule
-    private let interactorModule: InteractorModule
-    private let presenterModule: PresenterModule
-    
-}
+//class ViewControllerComponent {
+//    private let repositoryModule: RepositoryModule
+//    private let interactorModule: InteractorModule
+//    private let presenterModule: PresenterModule
+//    
+//}

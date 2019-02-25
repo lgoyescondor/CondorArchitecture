@@ -17,8 +17,4 @@ class InteractorModule {
     init(repositoryModule: RepositoryModule) {
         self.repositoryModule = repositoryModule
     }
-
-    lazy var getHeroesInteractor: Interactor<[String], Any?> = {
-        return GetHeroesInteractor(heroesRepository: repositoryModule.heroesRespository)
-    }()
 }

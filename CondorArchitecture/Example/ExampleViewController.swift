@@ -10,23 +10,23 @@ import UIKit
 
 class ExampleViewController: UIViewController {
 
-    private var presenter: ExamplePresenterProtocol?
-    
+    var presenter: ExamplePresenterProtocol?
+
     @IBOutlet weak var heroLabel: UILabel!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         self.presenter?.bind(view: self)
     }
-    
+
     deinit {
         self.presenter?.unBind()
     }
 }
 
-extension ExampleViewController : ExampleView {
-    func setHeroLabel(text: String){
+extension ExampleViewController: ExampleView {
+    func setHeroLabel(text: String) {
         self.heroLabel?.text = text
     }
 }
