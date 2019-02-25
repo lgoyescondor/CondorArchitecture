@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B662BCC0AF27D6CE63944F9 /* Pods_DataLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5894CB3D28A9BCAD45826C /* Pods_DataLayer.framework */; };
 		9BB341422224299B00D2F98B /* RepositoryModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB341412224299B00D2F98B /* RepositoryModule.swift */; };
 		B1F3D8432221B6F900E564A1 /* DataLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F3D8392221B6F900E564A1 /* DataLayer.framework */; };
 		B1F3D8482221B6F900E564A1 /* DataLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3D8472221B6F900E564A1 /* DataLayerTests.swift */; };
@@ -26,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A5894CB3D28A9BCAD45826C /* Pods_DataLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33994F00AA90EF6455A4DAC3 /* Pods-DataLayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataLayer.debug.xcconfig"; path = "Target Support Files/Pods-DataLayer/Pods-DataLayer.debug.xcconfig"; sourceTree = "<group>"; };
 		9BB341412224299B00D2F98B /* RepositoryModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryModule.swift; sourceTree = "<group>"; };
 		B1F3D8392221B6F900E564A1 /* DataLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F3D83C2221B6F900E564A1 /* DataLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataLayer.h; sourceTree = "<group>"; };
@@ -35,6 +38,7 @@
 		B1F3D8492221B6F900E564A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1F3D8592221B90B00E564A1 /* CoreLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F3D8672221BB2C00E564A1 /* MockedHeroesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedHeroesRepository.swift; sourceTree = "<group>"; };
+		B41CDF069DCB416BB7381EE4 /* Pods-DataLayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataLayer.release.xcconfig"; path = "Target Support Files/Pods-DataLayer/Pods-DataLayer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1F3D85A2221B90B00E564A1 /* CoreLayer.framework in Frameworks */,
+				5B662BCC0AF27D6CE63944F9 /* Pods_DataLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +77,7 @@
 				B1F3D8462221B6F900E564A1 /* DataLayerTests */,
 				B1F3D8582221B90B00E564A1 /* Frameworks */,
 				B1F3D83A2221B6F900E564A1 /* Products */,
+				F93118F1E0AE7414CA40B04D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				B1F3D8592221B90B00E564A1 /* CoreLayer.framework */,
+				0A5894CB3D28A9BCAD45826C /* Pods_DataLayer.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,6 +125,16 @@
 				B1F3D8672221BB2C00E564A1 /* MockedHeroesRepository.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		F93118F1E0AE7414CA40B04D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33994F00AA90EF6455A4DAC3 /* Pods-DataLayer.debug.xcconfig */,
+				B41CDF069DCB416BB7381EE4 /* Pods-DataLayer.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +155,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1F3D84D2221B6F900E564A1 /* Build configuration list for PBXNativeTarget "DataLayer" */;
 			buildPhases = (
+				7F9CBEB258E2FCA12A42BC74 /* [CP] Check Pods Manifest.lock */,
 				B1F3D8342221B6F900E564A1 /* Headers */,
 				B1F3D8352221B6F900E564A1 /* Sources */,
 				B1F3D8362221B6F900E564A1 /* Frameworks */,
@@ -223,6 +241,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F9CBEB258E2FCA12A42BC74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DataLayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B1F3D8352221B6F900E564A1 /* Sources */ = {
@@ -377,6 +420,7 @@
 		};
 		B1F3D84E2221B6F900E564A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33994F00AA90EF6455A4DAC3 /* Pods-DataLayer.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -404,6 +448,7 @@
 		};
 		B1F3D84F2221B6F900E564A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B41CDF069DCB416BB7381EE4 /* Pods-DataLayer.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
