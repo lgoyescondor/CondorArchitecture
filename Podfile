@@ -10,7 +10,7 @@ end
 
 target 'CondorArchitecture' do
 	project 'CondorArchitecture.xcproject'
-
+  pod 'Alamofire'
 end
 
 target 'CoreLayer' do
