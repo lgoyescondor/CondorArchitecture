@@ -8,11 +8,10 @@
 
 import Foundation
 
-protocol ExampleView : class {
+protocol ExampleView : BaseView {
     func setHeroLabel(text: String)
 }
 
-protocol ExamplePresenterProtocol : class {
-    func bind(view: ExampleView)
-    func unBind()
+protocol ExamplePresenterProtocol : BasePresenterProtocol {
+
 }

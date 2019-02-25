@@ -11,7 +11,7 @@
 		B1F3D8482221B6F900E564A1 /* DataLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3D8472221B6F900E564A1 /* DataLayerTests.swift */; };
 		B1F3D84A2221B6F900E564A1 /* DataLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = B1F3D83C2221B6F900E564A1 /* DataLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B1F3D85A2221B90B00E564A1 /* CoreLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F3D8592221B90B00E564A1 /* CoreLayer.framework */; };
-		B1F3D8682221BB2C00E564A1 /* HeroesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3D8672221BB2C00E564A1 /* HeroesRepository.swift */; };
+		B1F3D8682221BB2C00E564A1 /* MockedHeroesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3D8672221BB2C00E564A1 /* MockedHeroesRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +32,7 @@
 		B1F3D8472221B6F900E564A1 /* DataLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLayerTests.swift; sourceTree = "<group>"; };
 		B1F3D8492221B6F900E564A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1F3D8592221B90B00E564A1 /* CoreLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1F3D8672221BB2C00E564A1 /* HeroesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesRepository.swift; sourceTree = "<group>"; };
+		B1F3D8672221BB2C00E564A1 /* MockedHeroesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedHeroesRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 		B1F3D8662221BB1B00E564A1 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				B1F3D8672221BB2C00E564A1 /* HeroesRepository.swift */,
+				B1F3D8672221BB2C00E564A1 /* MockedHeroesRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -218,7 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1F3D8682221BB2C00E564A1 /* HeroesRepository.swift in Sources */,
+				B1F3D8682221BB2C00E564A1 /* MockedHeroesRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,27 +13,38 @@ import DataLayer
 class ExamplePresenter {
 
     let heroesRepository : HeroesRepositoryProtocol
-    let getHeroesInteractor : GetHeroesInteractor
+    let getHeroesInteractor : Interactor<[String], Any?>
     
     private weak var view: ExampleView?
     
     init(){
-        heroesRepository = HeroesRepository()
+        heroesRepository = MockedHeroesRepository()
         getHeroesInteractor = GetHeroesInteractor(heroesRepository: heroesRepository)
     }
     
     private func getHeroes() {
-        let message = self.getHeroesInteractor.getHeroes().reduce("") { (result, hero) in
-            return result + (result.isEmpty ? "" : ", ") + hero
-        }
-        
-        view?.setHeroLabel(text: message)
+
+        self.getHeroesInteractor.execute(
+            params: nil,
+            onSuccess: { [weak view] heroesOptional in
+            guard let heroes = heroesOptional else {
+                return
+            }
+            
+            let message = heroes.reduce("") { (result, hero) in
+                return result + (result.isEmpty ? "" : ", ") + hero
+            }
+            
+            view?.setHeroLabel(text: message)
+        }, onError: {
+            debugPrint( $0.localizedDescription)
+            })
     }
 }
 
 extension ExamplePresenter : ExamplePresenterProtocol{
-    func bind(view: ExampleView){
-        self.view = view
+    func bind(view: BaseView){
+        self.view = view as? ExampleView
         
         self.getHeroes()
     }

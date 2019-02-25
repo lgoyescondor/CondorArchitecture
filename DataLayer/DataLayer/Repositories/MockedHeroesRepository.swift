@@ -1,5 +1,5 @@
 //
-//  HeroesRepository.swift
+//  MockedHeroesRepository.swift
 //  DataLayer
 //
 //  Created by user149842 on 2/23/19.
@@ -9,7 +9,7 @@
 import Foundation
 import CoreLayer
 
-public class HeroesRepository : HeroesRepositoryProtocol {
+public class MockedHeroesRepository : HeroesRepositoryProtocol {
     public init() { }
     
     public func getHeroes() -> [String] {

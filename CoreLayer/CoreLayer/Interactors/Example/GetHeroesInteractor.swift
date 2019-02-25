@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class GetHeroesInteractor {
+public class GetHeroesInteractor: Interactor<[String], Any?>{
     
     let heroesRepository: HeroesRepositoryProtocol
     
@@ -16,7 +16,7 @@ public class GetHeroesInteractor {
         self.heroesRepository = heroesRepository
     }
     
-    public func getHeroes() -> [String] {
+    public override func buildUseCase(params: Any?) throws -> [String]? {
         return self.heroesRepository.getHeroes()
     }
 }

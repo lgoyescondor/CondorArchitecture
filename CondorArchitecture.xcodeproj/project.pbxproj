@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B151B9BB222389460060F7E9 /* ExampleContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151B9BA222389460060F7E9 /* ExampleContract.swift */; };
+		B151B9BE22238C7F0060F7E9 /* BaseContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151B9BD22238C7F0060F7E9 /* BaseContract.swift */; };
 		B1F3D7BF2221B1E500E564A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3D7BE2221B1E500E564A1 /* AppDelegate.swift */; };
 		B1F3D7C12221B1E500E564A1 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3D7C02221B1E500E564A1 /* ExampleViewController.swift */; };
 		B1F3D7C42221B1E500E564A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1F3D7C22221B1E500E564A1 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		B151B9BA222389460060F7E9 /* ExampleContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleContract.swift; sourceTree = "<group>"; };
+		B151B9BD22238C7F0060F7E9 /* BaseContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseContract.swift; sourceTree = "<group>"; };
 		B1F3D7BB2221B1E500E564A1 /* CondorArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CondorArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F3D7BE2221B1E500E564A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1F3D7C02221B1E500E564A1 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B151B9BC22238C6C0060F7E9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B151B9BD22238C7F0060F7E9 /* BaseContract.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		B1F3D7B22221B1E500E564A1 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +98,7 @@
 		B1F3D7BD2221B1E500E564A1 /* CondorArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				B151B9BC22238C6C0060F7E9 /* Base */,
 				B1F3D85B2221B9AE00E564A1 /* Example */,
 				B1F3D7BE2221B1E500E564A1 /* AppDelegate.swift */,
 				B1F3D7C22221B1E500E564A1 /* Main.storyboard */,
@@ -228,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1F3D7C12221B1E500E564A1 /* ExampleViewController.swift in Sources */,
+				B151B9BE22238C7F0060F7E9 /* BaseContract.swift in Sources */,
 				B1F3D85D2221B9C900E564A1 /* ExamplePresenter.swift in Sources */,
 				B151B9BB222389460060F7E9 /* ExampleContract.swift in Sources */,
 				B1F3D7BF2221B1E500E564A1 /* AppDelegate.swift in Sources */,
