@@ -8,9 +8,7 @@
 
 import UIKit
 
-class ExampleViewController: UIViewController {
-
-    var presenter: ExamplePresenterProtocol?
+class ExampleViewController: BaseViewController {
 
     @IBOutlet weak var heroLabel: UILabel!
 
