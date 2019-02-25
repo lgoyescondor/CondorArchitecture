@@ -15,21 +15,11 @@ class ExamplePresenter {
     let heroesRepository : HeroesRepositoryProtocol
     let getHeroesInteractor : GetHeroesInteractor
     
-    private weak var view: ExampleViewController?
+    private weak var view: ExampleView?
     
     init(){
         heroesRepository = HeroesRepository()
         getHeroesInteractor = GetHeroesInteractor(heroesRepository: heroesRepository)
-    }
-    
-    func bind(view: ExampleViewController){
-        self.view = view
-        
-        self.getHeroes()
-    }
-    
-    func unBind(){
-        self.view = nil
     }
     
     private func getHeroes() {
@@ -38,5 +28,17 @@ class ExamplePresenter {
         }
         
         view?.setHeroLabel(text: message)
+    }
+}
+
+extension ExamplePresenter : ExamplePresenterProtocol{
+    func bind(view: ExampleView){
+        self.view = view
+        
+        self.getHeroes()
+    }
+    
+    func unBind(){
+        self.view = nil
     }
 }

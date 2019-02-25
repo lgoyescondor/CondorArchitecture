@@ -10,7 +10,7 @@ import UIKit
 
 class ExampleViewController: UIViewController {
 
-    private var presenter: ExamplePresenter?
+    private var presenter: ExamplePresenterProtocol?
     
     @IBOutlet weak var heroLabel: UILabel!
     
@@ -24,7 +24,9 @@ class ExampleViewController: UIViewController {
     deinit {
         self.presenter?.unBind()
     }
-    
+}
+
+extension ExampleViewController : ExampleView {
     func setHeroLabel(text: String){
         self.heroLabel?.text = text
     }
