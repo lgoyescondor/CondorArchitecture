@@ -17,7 +17,6 @@ class ExampleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.presenter = ExamplePresenter()
         self.presenter?.bind(view: self)
     }
     

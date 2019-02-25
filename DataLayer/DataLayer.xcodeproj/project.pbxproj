@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BB341422224299B00D2F98B /* RepositoryModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB341412224299B00D2F98B /* RepositoryModule.swift */; };
 		B1F3D8432221B6F900E564A1 /* DataLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F3D8392221B6F900E564A1 /* DataLayer.framework */; };
 		B1F3D8482221B6F900E564A1 /* DataLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3D8472221B6F900E564A1 /* DataLayerTests.swift */; };
 		B1F3D84A2221B6F900E564A1 /* DataLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = B1F3D83C2221B6F900E564A1 /* DataLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9BB341412224299B00D2F98B /* RepositoryModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryModule.swift; sourceTree = "<group>"; };
 		B1F3D8392221B6F900E564A1 /* DataLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F3D83C2221B6F900E564A1 /* DataLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataLayer.h; sourceTree = "<group>"; };
 		B1F3D83D2221B6F900E564A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9BB341402224298B00D2F98B /* di */ = {
+			isa = PBXGroup;
+			children = (
+				9BB341412224299B00D2F98B /* RepositoryModule.swift */,
+			);
+			path = di;
+			sourceTree = "<group>";
+		};
 		B1F3D82F2221B6F900E564A1 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 		B1F3D83B2221B6F900E564A1 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				9BB341402224298B00D2F98B /* di */,
 				B1F3D8662221BB1B00E564A1 /* Repositories */,
 				B1F3D83C2221B6F900E564A1 /* DataLayer.h */,
 				B1F3D83D2221B6F900E564A1 /* Info.plist */,
@@ -219,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1F3D8682221BB2C00E564A1 /* MockedHeroesRepository.swift in Sources */,
+				9BB341422224299B00D2F98B /* RepositoryModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
