@@ -5,17 +5,17 @@ use_frameworks!
 def rxPods
 	pod 'RxSwift'
 	pod 'RxCocoa'
-	pod 'RxDataSources'
 end
 
 target 'CondorArchitecture' do
 	project 'CondorArchitecture.xcproject'
   pod 'Alamofire'
+  rxPods
 end
 
 target 'CoreLayer' do
 	project 'CoreLayer/CoreLayer.xcproject'
-
+  rxPods
 end
 
 target 'DataLayer' do

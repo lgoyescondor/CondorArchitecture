@@ -8,15 +8,17 @@
 
 import Foundation
 import CoreLayer
-import DataLayer
+import RxSwift
 
 class ExamplePresenter {
 
-    let getHeroesInteractor: Interactor<[String], Any?>
+    let getHeroesInteractor: ObservableInteractor<[String], Any?>
 
     private weak var view: ExampleView?
 
-    init(getHeroesInteractor: Interactor<[String], Any?>) {
+    private let disposeBag = DisposeBag()
+
+    init(getHeroesInteractor: ObservableInteractor<[String], Any?>) {
         self.getHeroesInteractor = getHeroesInteractor
     }
 
@@ -36,7 +38,7 @@ class ExamplePresenter {
                 view?.setHeroLabel(text: message)
             }, onError: {
                 debugPrint($0.localizedDescription)
-            })
+            }).disposed(by: disposeBag)
     }
 }
 

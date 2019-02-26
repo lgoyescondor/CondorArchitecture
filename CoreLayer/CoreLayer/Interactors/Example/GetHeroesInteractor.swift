@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import RxSwift
 
-public class GetHeroesInteractor: Interactor<[String], Any?>{
+public class GetHeroesInteractor: ObservableInteractor<[String], Any?>{
     
     let heroesRepository: HeroesRepositoryProtocol
     
@@ -16,7 +17,11 @@ public class GetHeroesInteractor: Interactor<[String], Any?>{
         self.heroesRepository = heroesRepository
     }
     
-    public override func buildUseCase(params: Any?) throws -> [String]? {
-        return self.heroesRepository.getHeroes()
+    public override func buildUseCase(params: Any?) -> Observable<[String]> {
+        return Observable.create({
+            $0.onNext( self.heroesRepository.getHeroes() )
+            $0.onCompleted()
+            return Disposables.create()
+        })
     }
 }

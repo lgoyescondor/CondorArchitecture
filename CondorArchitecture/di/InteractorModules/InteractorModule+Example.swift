@@ -9,11 +9,11 @@
 import CoreLayer
 
 protocol ExampleInteractorModule {
-    var getHeroesInteractor: Interactor<[String], Any?> { get }
+    var getHeroesInteractor: ObservableInteractor<[String], Any?> { get }
 }
 
 extension InteractorModule: ExampleInteractorModule {
-    var getHeroesInteractor: Interactor<[String], Any?> {
+    var getHeroesInteractor: ObservableInteractor<[String], Any?> {
         return GetHeroesInteractor(heroesRepository: repositoryModule.heroesRespository)
     }
 }
