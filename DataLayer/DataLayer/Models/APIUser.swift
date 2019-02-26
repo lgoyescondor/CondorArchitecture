@@ -15,7 +15,8 @@ struct APIUser: Codable {
     let avatar: String
 
     enum CodingKeys: String, CodingKey {
-        case id, avatar
+        case id
+        case avatar
         case firstName = "first_name"
         case lastName = "last_name"
     }

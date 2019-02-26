@@ -14,7 +14,7 @@ struct DataConstants {
     }
     struct APIClient {
         struct UserServices{
-            static let listUsers = "api/users?page=2"
+            static let listUsers = "api/users"
         }
     }
 }
