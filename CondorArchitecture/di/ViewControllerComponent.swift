@@ -19,6 +19,8 @@ class ViewControllerComponent {
         self.repositoryModule = RepositoryModule()
         self.interactorModule = InteractorModule(repositoryModule: self.repositoryModule)
         
-        modules[NSStringFromClass(ExampleViewController.self.classForCoder())] = ExampleModule()
+        modules[NSStringFromClass(ExampleViewController.self.classForCoder())] = ExampleModule(
+            repositoryModule: repositoryModule,
+            interactorModule: interactorModule)
     }
 }

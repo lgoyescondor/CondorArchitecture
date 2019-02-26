@@ -21,9 +21,9 @@ class AbstractModule: Module {
     var repositoryModule: RepositoryModule
     var interactorModule: InteractorModule
 
-    init() {
-        self.repositoryModule = RepositoryModule()
-        self.interactorModule = InteractorModule(repositoryModule: self.repositoryModule)
+    init(repositoryModule: RepositoryModule, interactorModule: InteractorModule) {
+        self.repositoryModule = repositoryModule
+        self.interactorModule = interactorModule
     }
 
     func inject(viewController: UIViewController) { }
