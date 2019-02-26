@@ -8,11 +8,15 @@
 
 import Foundation
 import CoreLayer
+import RxSwift
 
 public class MockedHeroesRepository : HeroesRepositoryProtocol {
     public init() { }
     
-    public func getHeroes() -> [String] {
-        return ["Superman", "Daredevil"]
+    public func getHeroes() -> Observable<[String]> {
+        return Observable.create({
+            $0.onNext(["Superman", "Daredevil"])
+            return Disposables.create()
+        })
     }
 }

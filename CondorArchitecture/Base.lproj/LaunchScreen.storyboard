@@ -17,7 +17,18 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Condor" translatesAutoresizingMaskIntoConstraints="NO" id="uu0-qB-6Rw">
+                                <rect key="frame" x="100" y="120" width="175" height="447"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.80067616701126099" blue="0.011045634746551514" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uu0-qB-6Rw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="L53-fq-ZmG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uu0-qB-6Rw" secondAttribute="trailing" constant="100" id="TFS-aM-yQ6"/>
+                            <constraint firstItem="uu0-qB-6Rw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="pxa-m9-NtV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uu0-qB-6Rw" secondAttribute="bottom" constant="100" id="xxg-4p-dAX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -26,4 +37,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Condor" width="492" height="508"/>
+    </resources>
 </document>

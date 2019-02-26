@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BDBF16A22258FF500B477BD /* CustomErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDBF16922258FF500B477BD /* CustomErrors.swift */; };
+		9BDBF1732225983D00B477BD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDBF1722225983D00B477BD /* Constants.swift */; };
+		9BDBF17C22259C8900B477BD /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDBF17B22259C8900B477BD /* Hero.swift */; };
 		B151B9C122238DBD0060F7E9 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151B9C022238DBD0060F7E9 /* Interactor.swift */; };
 		B1F3D81F2221B68F00E564A1 /* CoreLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F3D8152221B68F00E564A1 /* CoreLayer.framework */; };
 		B1F3D8242221B68F00E564A1 /* CoreLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3D8232221B68F00E564A1 /* CoreLayerTests.swift */; };
@@ -29,6 +32,9 @@
 /* Begin PBXFileReference section */
 		3220F14D60216168359C75EF /* Pods_CoreLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81956CE95292D1536C847D98 /* Pods-CoreLayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreLayer.release.xcconfig"; path = "Target Support Files/Pods-CoreLayer/Pods-CoreLayer.release.xcconfig"; sourceTree = "<group>"; };
+		9BDBF16922258FF500B477BD /* CustomErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomErrors.swift; sourceTree = "<group>"; };
+		9BDBF1722225983D00B477BD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9BDBF17B22259C8900B477BD /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		B151B9C022238DBD0060F7E9 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		B1F3D8152221B68F00E564A1 /* CoreLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F3D8182221B68F00E564A1 /* CoreLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreLayer.h; sourceTree = "<group>"; };
@@ -71,6 +77,14 @@
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
+		9BDBF17822259C6900B477BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9BDBF17B22259C8900B477BD /* Hero.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		B151B9BF22238DAE0060F7E9 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,10 +116,13 @@
 		B1F3D8172221B68F00E564A1 /* CoreLayer */ = {
 			isa = PBXGroup;
 			children = (
+				9BDBF17822259C6900B477BD /* Models */,
 				B1F3D8692221BC5400E564A1 /* Repositories */,
 				B1F3D85E2221BA5800E564A1 /* Interactors */,
 				B1F3D8182221B68F00E564A1 /* CoreLayer.h */,
 				B1F3D8192221B68F00E564A1 /* Info.plist */,
+				9BDBF16922258FF500B477BD /* CustomErrors.swift */,
+				9BDBF1722225983D00B477BD /* Constants.swift */,
 			);
 			path = CoreLayer;
 			sourceTree = "<group>";
@@ -287,9 +304,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BDBF1732225983D00B477BD /* Constants.swift in Sources */,
 				B151B9C122238DBD0060F7E9 /* Interactor.swift in Sources */,
 				B1F3D8652221BACF00E564A1 /* GetHeroesInteractor.swift in Sources */,
+				9BDBF16A22258FF500B477BD /* CustomErrors.swift in Sources */,
 				B1F3D86B2221BC6400E564A1 /* HeroesRepositoryProtocol.swift in Sources */,
+				9BDBF17C22259C8900B477BD /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

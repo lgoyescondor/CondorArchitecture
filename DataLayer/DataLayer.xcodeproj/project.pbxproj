@@ -15,6 +15,9 @@
 		9BDBF1632225888B00B477BD /* APIUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDBF1622225888B00B477BD /* APIUser.swift */; };
 		9BDBF16622258A0800B477BD /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDBF16522258A0800B477BD /* HttpClient.swift */; };
 		9BDBF16822258A5300B477BD /* BaseEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDBF16722258A5300B477BD /* BaseEndpoint.swift */; };
+		9BDBF17522259AE400B477BD /* ServiceModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDBF17422259AE400B477BD /* ServiceModule.swift */; };
+		9BDBF17722259B3300B477BD /* DataConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDBF17622259B3300B477BD /* DataConstants.swift */; };
+		9BDBF17F22259CE100B477BD /* APIUserHeroWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDBF17E22259CE100B477BD /* APIUserHeroWrapper.swift */; };
 		B1F3D8432221B6F900E564A1 /* DataLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F3D8392221B6F900E564A1 /* DataLayer.framework */; };
 		B1F3D8482221B6F900E564A1 /* DataLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3D8472221B6F900E564A1 /* DataLayerTests.swift */; };
 		B1F3D84A2221B6F900E564A1 /* DataLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = B1F3D83C2221B6F900E564A1 /* DataLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,6 +45,9 @@
 		9BDBF1622225888B00B477BD /* APIUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUser.swift; sourceTree = "<group>"; };
 		9BDBF16522258A0800B477BD /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		9BDBF16722258A5300B477BD /* BaseEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEndpoint.swift; sourceTree = "<group>"; };
+		9BDBF17422259AE400B477BD /* ServiceModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModule.swift; sourceTree = "<group>"; };
+		9BDBF17622259B3300B477BD /* DataConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConstants.swift; sourceTree = "<group>"; };
+		9BDBF17E22259CE100B477BD /* APIUserHeroWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUserHeroWrapper.swift; sourceTree = "<group>"; };
 		B1F3D8392221B6F900E564A1 /* DataLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F3D83C2221B6F900E564A1 /* DataLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataLayer.h; sourceTree = "<group>"; };
 		B1F3D83D2221B6F900E564A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				9BB341412224299B00D2F98B /* RepositoryModule.swift */,
+				9BDBF17422259AE400B477BD /* ServiceModule.swift */,
 			);
 			path = di;
 			sourceTree = "<group>";
@@ -85,7 +92,7 @@
 		9BDBF15A2225873E00B477BD /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				9BDBF164222589EF00B477BD /* Client */,
+				9BDBF164222589EF00B477BD /* HttpClient */,
 				9BDBF15B2225874800B477BD /* Endpoints */,
 			);
 			path = Network;
@@ -109,12 +116,20 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		9BDBF164222589EF00B477BD /* Client */ = {
+		9BDBF164222589EF00B477BD /* HttpClient */ = {
 			isa = PBXGroup;
 			children = (
 				9BDBF16522258A0800B477BD /* HttpClient.swift */,
 			);
-			path = Client;
+			path = HttpClient;
+			sourceTree = "<group>";
+		};
+		9BDBF17D22259CBC00B477BD /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				9BDBF17E22259CE100B477BD /* APIUserHeroWrapper.swift */,
+			);
+			path = Wrappers;
 			sourceTree = "<group>";
 		};
 		B1F3D82F2221B6F900E564A1 = {
@@ -140,12 +155,14 @@
 		B1F3D83B2221B6F900E564A1 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				9BDBF17D22259CBC00B477BD /* Wrappers */,
 				9BDBF15F2225884600B477BD /* Models */,
 				9BDBF15A2225873E00B477BD /* Network */,
 				9BB341402224298B00D2F98B /* di */,
 				B1F3D8662221BB1B00E564A1 /* Repositories */,
 				B1F3D83C2221B6F900E564A1 /* DataLayer.h */,
 				B1F3D83D2221B6F900E564A1 /* Info.plist */,
+				9BDBF17622259B3300B477BD /* DataConstants.swift */,
 			);
 			path = DataLayer;
 			sourceTree = "<group>";
@@ -325,7 +342,10 @@
 				9BDBF15E2225877300B477BD /* UserService.swift in Sources */,
 				9BDBF16822258A5300B477BD /* BaseEndpoint.swift in Sources */,
 				9BDBF1632225888B00B477BD /* APIUser.swift in Sources */,
+				9BDBF17F22259CE100B477BD /* APIUserHeroWrapper.swift in Sources */,
+				9BDBF17522259AE400B477BD /* ServiceModule.swift in Sources */,
 				B1F3D8682221BB2C00E564A1 /* MockedHeroesRepository.swift in Sources */,
+				9BDBF17722259B3300B477BD /* DataConstants.swift in Sources */,
 				9BDBF1592225869B00B477BD /* HeroesRepository.swift in Sources */,
 				9BDBF16622258A0800B477BD /* HttpClient.swift in Sources */,
 				9BDBF1612225885300B477BD /* GetListOfUsersResponse.swift in Sources */,

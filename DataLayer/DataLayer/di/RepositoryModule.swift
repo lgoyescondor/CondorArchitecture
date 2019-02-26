@@ -10,10 +10,12 @@ import Foundation
 import CoreLayer
 
 public class RepositoryModule {
+    
+    private let serviceModule = ServiceModule()
 
     public init() { }
 
     public lazy var heroesRespository: HeroesRepositoryProtocol = {
-        return MockedHeroesRepository()
+        return HeroesRepository(userService: serviceModule.userService)
     }()
 }

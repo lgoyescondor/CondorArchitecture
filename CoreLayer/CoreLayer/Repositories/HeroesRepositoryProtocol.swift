@@ -7,7 +7,8 @@
 //
 
 import Foundation
+import RxSwift
 
-public protocol HeroesRepositoryProtocol{
-    func getHeroes() -> [String]
+public protocol HeroesRepositoryProtocol {
+    func getHeroes() -> Observable<[String]>
 }

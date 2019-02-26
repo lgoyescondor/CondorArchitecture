@@ -18,10 +18,6 @@ public class GetHeroesInteractor: ObservableInteractor<[String], Any?>{
     }
     
     public override func buildUseCase(params: Any?) -> Observable<[String]> {
-        return Observable.create({
-            $0.onNext( self.heroesRepository.getHeroes() )
-            $0.onCompleted()
-            return Disposables.create()
-        })
+        return self.heroesRepository.getHeroes()
     }
 }
