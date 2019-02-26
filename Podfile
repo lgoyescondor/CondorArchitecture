@@ -7,15 +7,15 @@ def rxPods
 	pod 'RxCocoa'
 end
 
+rxPods
+
 target 'CondorArchitecture' do
 	project 'CondorArchitecture.xcproject'
   pod 'Alamofire'
-  rxPods
 end
 
 target 'CoreLayer' do
 	project 'CoreLayer/CoreLayer.xcproject'
-  rxPods
 end
 
 target 'DataLayer' do
