@@ -12,7 +12,6 @@
 		9B4B5B5A2225A57B0059F1AE /* DataLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4B5B582225A57B0059F1AE /* DataLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9B4B5B5C2225A57B0059F1AE /* CoreLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4B5B5B2225A57B0059F1AE /* CoreLayer.framework */; };
 		9B4B5B5D2225A57B0059F1AE /* CoreLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4B5B5B2225A57B0059F1AE /* CoreLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9BB3413B222427C900D2F98B /* PresenterModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3413A222427C900D2F98B /* PresenterModule.swift */; };
 		9BB3413D222427F200D2F98B /* ViewControllerComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3413C222427F200D2F98B /* ViewControllerComponent.swift */; };
 		9BB3413F222428C500D2F98B /* InteractorModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3413E222428C500D2F98B /* InteractorModule.swift */; };
 		9BB3414422242B8F00D2F98B /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3414322242B8F00D2F98B /* Module.swift */; };
@@ -60,7 +59,6 @@
 		61F23E028FD8738FFFFC40D6 /* Pods_CondorArchitecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CondorArchitecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4B5B582225A57B0059F1AE /* DataLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4B5B5B2225A57B0059F1AE /* CoreLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BB3413A222427C900D2F98B /* PresenterModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterModule.swift; sourceTree = "<group>"; };
 		9BB3413C222427F200D2F98B /* ViewControllerComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerComponent.swift; sourceTree = "<group>"; };
 		9BB3413E222428C500D2F98B /* InteractorModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorModule.swift; sourceTree = "<group>"; };
 		9BB3414322242B8F00D2F98B /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				9BB341372224279E00D2F98B /* InteractorModules */,
-				9BB3413A222427C900D2F98B /* PresenterModule.swift */,
 				9BB3413C222427F200D2F98B /* ViewControllerComponent.swift */,
 				9BB3414322242B8F00D2F98B /* Module.swift */,
 			);
@@ -374,7 +371,6 @@
 				9BB3414422242B8F00D2F98B /* Module.swift in Sources */,
 				9BB3413F222428C500D2F98B /* InteractorModule.swift in Sources */,
 				9BB3414A22244DAB00D2F98B /* BaseViewController.swift in Sources */,
-				9BB3413B222427C900D2F98B /* PresenterModule.swift in Sources */,
 				9BB3414622242C7B00D2F98B /* InteractorModule+Example.swift in Sources */,
 				B1F3D85D2221B9C900E564A1 /* ExamplePresenter.swift in Sources */,
 				9BB3413D222427F200D2F98B /* ViewControllerComponent.swift in Sources */,

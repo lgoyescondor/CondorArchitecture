@@ -11,9 +11,8 @@ import CoreLayer
 
 class ExampleModule: AbstractModule {
     override func inject(viewController: UIViewController) {
-        let getHeroesInteractor = GetHeroesInteractor(heroesRepository: repositoryModule.heroesRespository)
         
-        let presenter = ExamplePresenter(getHeroesInteractor: getHeroesInteractor)
+        let presenter = ExamplePresenter(getHeroesInteractor: interactorModule.getHeroesInteractor)
         
         (viewController as? ExampleViewController)?.presenter = presenter
     }

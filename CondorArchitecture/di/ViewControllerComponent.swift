@@ -12,14 +12,12 @@ import DataLayer
 class ViewControllerComponent {
     private let repositoryModule: RepositoryModule
     private let interactorModule: InteractorModule
-    private let presenterModule: PresenterModule
     
     var modules: [String: AbstractModule] = [String: AbstractModule]()
     
     init(){
         self.repositoryModule = RepositoryModule()
         self.interactorModule = InteractorModule(repositoryModule: self.repositoryModule)
-        self.presenterModule = PresenterModule(interactorModule: self.interactorModule)
         
         modules[NSStringFromClass(ExampleViewController.self.classForCoder())] = ExampleModule()
     }
